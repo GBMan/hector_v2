@@ -38,7 +38,7 @@ export default function PageContainer({categories}) {
 
     return (
         <div className={`page-container ${cssTransitioning}`}>
-            <TransitionGroup className="mabite">
+            <TransitionGroup>
                 <CSSTransition
                 key={location.key}
                 classNames="page-fade"
