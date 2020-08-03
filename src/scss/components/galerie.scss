@@ -1,0 +1,197 @@
+:root {
+    --info-diametre: 30px;
+    --galerie-padding: 10px;
+    --thumb-dim: 80px;
+}
+
+@keyframes zoom-arrow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes showing {
+    0% {
+        transform: translateX(-5vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.App-galerie--container {
+    // background-color: $galerie-bg;
+    height: 100%;
+    overflow: hidden;
+    position:fixed;
+    width:100%;
+    z-index:100;
+}
+
+.App-galerie--close-bg {
+    background-color: $galerie-bg;
+    height: 100%;
+    left: 0;
+    position:absolute;
+    top: 0;
+    width:100%;
+    z-index:100;
+}
+
+.App-galerie--img-container {
+    align-content: center;
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    position:relative;
+    z-index:101;
+    img {
+        animation-name: showing;
+        animation-duration: .2s;
+    }
+}
+
+.App-galerie--thumbs-container {
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    z-index:101;
+}
+.App-galerie--thumbs {
+    border: 1px solid $dark;
+    box-shadow: 0 0 10px $dark;
+    height: var(--thumb-dim);
+    width: var(--thumb-dim);
+    +.App-galerie--thumbs {
+        margin-left: 10px;
+    }
+}
+.App-galerie--thumb-selected {
+    border: 1px solid $clear;
+}
+
+.App-galerie--counter-container {
+    bottom: 0px;
+    color: $clear;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 102;
+}
+
+.App-galerie--arrow {
+    animation-duration: .2s;
+    bottom: var(--galerie-padding);
+    color: $clear;
+    height: 3rem;
+    font-size: 3rem;
+    position:absolute;
+    z-index:103;
+    &:hover {
+        animation-name: zoom-arrow;
+    }
+}
+.App-galerie--arrow-left {
+    left:0;
+}
+.App-galerie--arrow-right {
+    right:0;
+}
+
+.App-galerie--info {
+    display: none;
+}
+
+.App-galerie--description {
+    display: none;
+}
+
+@media screen and (min-width:640px) {
+    .App-galerie--img-container {
+        height: calc(100% - 100px);
+        img{
+            max-height: calc(100vh - 100px);
+        }
+    }
+    .App-galerie--thumbs-container {
+        display: flex;
+    }
+    .App-galerie--counter-container {
+        display: none;
+    }
+    .App-galerie--arrow {
+        bottom: calc(50% - 1.5rem);
+    }
+
+    .App-galerie--info {
+        align-content: center;
+        animation-duration: .2s;
+        background-color: $dark-90;
+        border: 1px solid rgba(255, 255, 255, .3);
+        border-radius: 50%;
+        bottom: calc(var(--galerie-padding) + (var(--thumb-dim) / 2) - (var(--info-diametre) / 2));
+        // box-shadow: 0 0 5px $clear;
+        color: $clear;
+        display: grid;
+        height: var(--info-diametre);
+        justify-content: center;
+        position: absolute;
+        right: 10px;
+        transition-duration: .2s;
+        transition-property: background-color, border-radius, color, transform;
+        width: var(--info-diametre);
+        z-index: 104;
+        &:hover {
+            animation-name: zoom;
+            background: $clear;
+            color: $main;
+        }
+        &.show {
+            animation-duration: .0s;
+            border-radius: 0 50% 50% 50%;
+        }
+    }
+
+    .App-galerie--description {
+        background: $dark-90;
+        // border: 1px solid $clear;
+        border-radius: 5px 5px 0 5px;
+        bottom: calc(3 * var(--info-diametre) / 2 + 10px + var(--galerie-padding));
+        box-shadow: 0 0 5px $clear;
+        color: $clear;
+        display: block;
+        max-width: calc(100vw - var(--galerie-padding) * 2);
+        padding: 10px;
+        position: absolute;
+        right: calc(var(--info-diametre) + var(--galerie-padding));
+        transition: transform .2s ease;
+        transform: scale(0);
+        transform-origin: bottom right;
+        z-index: 104;
+        &.show {
+            transform: scale(1)
+        }
+    }
+}

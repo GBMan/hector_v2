@@ -1,0 +1,37 @@
+.App-header {
+    background-color: $header-bg;
+    color: $header-txt;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding:5px;
+}
+
+.App-header--link {
+    color: $clear;
+    &:hover {
+        background-color: $second;
+    }
+}
+.App-header--h1-link {
+    color: $clear;
+    &:hover {
+        color: $clear;
+    }
+}
+
+.App-header--right {
+    display: none;
+}
+
+@media screen and (min-width:640px) {
+    .App-header {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .App-header--right {
+        display: block;
+        align-self: end;
+        // justify-self: end;
+        text-align: right;
+    }
+}

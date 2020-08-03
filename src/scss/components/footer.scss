@@ -1,0 +1,38 @@
+.App-footer {
+    background-color: $footer-bg;
+    color:$footer-txt;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    padding: 5px;
+}
+
+.App-footer--left {
+    align-self: start;
+    // width: 100%;
+    li {
+        margin-bottom: 10px;
+    }
+    li:last-of-type {
+        margin-bottom: 0px;
+    }
+}
+
+.App-footer--link {
+    color: $clear;
+    &:hover {
+        background-color: $second;
+    }
+}
+
+.App-footer--right {
+    align-self: end;
+    // justify-self: end;
+    text-align: right;
+    // width: 100%;
+    li+li {
+        margin-top: 10px;
+    }
+}
+.App-footer--right-small {
+    font-size: 0.8em;
+}

@@ -1,0 +1,62 @@
+@import-normalize;
+@import './config/config.scss';
+@import './config/fonts.scss';
+@import './config/colors.scss';
+@import './config/dev-infos.scss';
+@import './components/buttons.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './page/page-container.scss';
+@import './page/page-home.scss';
+@import './page/page-groupes.scss';
+@import './components/galerie.scss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size:$font-size;
+}
+
+body {
+  background-color: $app-bg;
+  font-family: $font-eurostile, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+#root {
+  display: grid;
+  height:100vh;
+  grid-template-rows: min-content 1fr min-content;
+}

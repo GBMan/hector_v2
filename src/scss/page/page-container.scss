@@ -1,0 +1,58 @@
+.page-container {
+    position: relative;
+    &.transitioning {
+        overflow: hidden;
+    }
+    &>div {
+        height: 100%;
+    }
+}
+.page {
+    left: 0;
+    opacity: 1;
+    top: 0;
+    transition: opacity, left, right, .3s;
+    width: 100%;
+    &-fade-enter {
+        // left: -100%;
+        position: absolute;
+        &-active {
+            opacity: 1;
+        }
+        &-done {
+            opacity: 1;
+        }
+    }
+    &-fade-exit {
+        // left: 100%;
+        position: absolute;
+    }
+}
+.in .page{
+    &-fade-enter {
+        left: 100%;
+        &-active {
+            left: 0;
+        }
+        &-done {
+            left: 0;
+        }
+    }
+    &-fade-exit {
+        left: -100%;
+    }
+}
+.out .page{
+    &-fade-enter {
+        left: -100%;
+        &-active {
+            left: 0;
+        }
+        &-done {
+            left: 0;
+        }
+    }
+    &-fade-exit {
+        left: 100%;
+    }
+}
