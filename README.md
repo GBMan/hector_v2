@@ -36,4 +36,4 @@ Push the datas on git.
 Pictos gets on http://glyphter.com
 
 ## Netlify
-<!-- https://relaxed-kare-8fe9ac.netlify.com/ -->
+https://sharp-sammet-acbfe5.netlify.app/
