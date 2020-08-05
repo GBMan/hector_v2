@@ -1154,6 +1154,32 @@
         "alt":"St-Michel."
       },
       {
+        "id":26,
+        "type":"oeuvre",
+        "title":"The little red riding hood family 1",
+        "infos":"Bas-relief sur MDF de la série 'The little red riding hood'.",
+        "dimensions":"Width: 130cm, Height: 80cm ",
+        "thumbs":{
+          "160":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_160.jpg",
+          "320":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_320.jpg",
+          "640":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_640.jpg",
+          "960":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_960.jpg",
+          "1280":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_1280.jpg",
+          "1600":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_1600.jpg",
+          "1920":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_1920.jpg"
+        },
+        "imgs":{
+          "160":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_160.jpg",
+          "320":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_320.jpg",
+          "640":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_640.jpg",
+          "960":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_960.jpg",
+          "1280":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_1280.jpg",
+          "1600":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_1600.jpg",
+          "1920":"/assets/img/bas-reliefs/the-little-red-riding-hood-family-0_1920.jpg"
+        },
+        "alt":"The little red riding hood family 1."
+      },
+      {
         "id":27,
         "type":"oeuvre",
         "title":"The little red riding hood family 1",
@@ -1230,6 +1256,32 @@
           "1920":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-1_1920.jpg"
         },
         "alt":"The little red riding hood the wolf."
+      },
+      {
+        "id":30,
+        "type":"oeuvre",
+        "title":"The little red riding hood the wolf",
+        "infos":"Bas-relief sur MDF de la série 'The little red riding hood'.",
+        "dimensions":"Width: 130cm, Height: 80cm ",
+        "thumbs":{
+          "160":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_160.jpg",
+          "320":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_320.jpg",
+          "640":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_640.jpg",
+          "960":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_960.jpg",
+          "1280":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_1280.jpg",
+          "1600":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_1600.jpg",
+          "1920":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_1920.jpg"
+        },
+        "imgs":{
+          "160":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_160.jpg",
+          "320":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_320.jpg",
+          "640":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_640.jpg",
+          "960":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_960.jpg",
+          "1280":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_1280.jpg",
+          "1600":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_1600.jpg",
+          "1920":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_1920.jpg"
+        },
+        "alt":"The little red riding hood the wolf."
       }
     ]
   },
@@ -1250,58 +1302,6 @@
     },
     "alt":"Bas-reliefs from the Cucus serie.",
     "images":[
-      {
-        "id":10,
-        "type":"oeuvre",
-        "title":"Hikari Hiruma",
-        "infos":"Bas-relief.",
-        "dimensions":"Width: 40cm, Height: 40cm ",
-        "thumbs":{
-          "160":"/assets/img/cucus/hikari-hiruma-2006_160.jpg",
-          "320":"/assets/img/cucus/hikari-hiruma-2006_320.jpg",
-          "640":"/assets/img/cucus/hikari-hiruma-2006_640.jpg",
-          "960":"/assets/img/cucus/hikari-hiruma-2006_960.jpg",
-          "1280":"/assets/img/cucus/hikari-hiruma-2006_1280.jpg",
-          "1600":"/assets/img/cucus/hikari-hiruma-2006_1600.jpg",
-          "1920":"/assets/img/cucus/hikari-hiruma-2006_1920.jpg"
-        },
-        "imgs":{
-          "160":"/assets/img/cucus/hikari-hiruma-2006_160.jpg",
-          "320":"/assets/img/cucus/hikari-hiruma-2006_320.jpg",
-          "640":"/assets/img/cucus/hikari-hiruma-2006_640.jpg",
-          "960":"/assets/img/cucus/hikari-hiruma-2006_960.jpg",
-          "1280":"/assets/img/cucus/hikari-hiruma-2006_1280.jpg",
-          "1600":"/assets/img/cucus/hikari-hiruma-2006_1600.jpg",
-          "1920":"/assets/img/cucus/hikari-hiruma-2006_1920.jpg"
-        },
-        "alt":"Hikari Hiruma."
-      },
-      {
-        "id":11,
-        "type":"oeuvre",
-        "title":"Boba Fett",
-        "infos":"Bas-relief.",
-        "dimensions":"Width: 40cm, Height: 40cm ",
-        "thumbs":{
-          "160":"/assets/img/cucus/boba-fett-2015_160.jpg",
-          "320":"/assets/img/cucus/boba-fett-2015_320.jpg",
-          "640":"/assets/img/cucus/boba-fett-2015_640.jpg",
-          "960":"/assets/img/cucus/boba-fett-2015_960.jpg",
-          "1280":"/assets/img/cucus/boba-fett-2015_1280.jpg",
-          "1600":"/assets/img/cucus/boba-fett-2015_1600.jpg",
-          "1920":"/assets/img/cucus/boba-fett-2015_1920.jpg"
-        },
-        "imgs":{
-          "160":"/assets/img/cucus/boba-fett-2015_160.jpg",
-          "320":"/assets/img/cucus/boba-fett-2015_320.jpg",
-          "640":"/assets/img/cucus/boba-fett-2015_640.jpg",
-          "960":"/assets/img/cucus/boba-fett-2015_960.jpg",
-          "1280":"/assets/img/cucus/boba-fett-2015_1280.jpg",
-          "1600":"/assets/img/cucus/boba-fett-2015_1600.jpg",
-          "1920":"/assets/img/cucus/boba-fett-2015_1920.jpg"
-        },
-        "alt":"Boba Fett."
-      },
       {
         "id":12,
         "type":"oeuvre",
@@ -1433,6 +1433,32 @@
         "alt":"Capitaine Crochet."
       },
       {
+        "id":10,
+        "type":"oeuvre",
+        "title":"Hikari Hiruma",
+        "infos":"Bas-relief.",
+        "dimensions":"Width: 40cm, Height: 40cm ",
+        "thumbs":{
+          "160":"/assets/img/cucus/hikari-hiruma-2006_160.jpg",
+          "320":"/assets/img/cucus/hikari-hiruma-2006_320.jpg",
+          "640":"/assets/img/cucus/hikari-hiruma-2006_640.jpg",
+          "960":"/assets/img/cucus/hikari-hiruma-2006_960.jpg",
+          "1280":"/assets/img/cucus/hikari-hiruma-2006_1280.jpg",
+          "1600":"/assets/img/cucus/hikari-hiruma-2006_1600.jpg",
+          "1920":"/assets/img/cucus/hikari-hiruma-2006_1920.jpg"
+        },
+        "imgs":{
+          "160":"/assets/img/cucus/hikari-hiruma-2006_160.jpg",
+          "320":"/assets/img/cucus/hikari-hiruma-2006_320.jpg",
+          "640":"/assets/img/cucus/hikari-hiruma-2006_640.jpg",
+          "960":"/assets/img/cucus/hikari-hiruma-2006_960.jpg",
+          "1280":"/assets/img/cucus/hikari-hiruma-2006_1280.jpg",
+          "1600":"/assets/img/cucus/hikari-hiruma-2006_1600.jpg",
+          "1920":"/assets/img/cucus/hikari-hiruma-2006_1920.jpg"
+        },
+        "alt":"Hikari Hiruma."
+      },
+      {
         "id":17,
         "type":"oeuvre",
         "title":"Casimir",
@@ -1561,6 +1587,32 @@
           "1920":"/assets/img/cucus/flash-1920.jpg"
         },
         "alt":"Flash."
+      },
+      {
+        "id":11,
+        "type":"oeuvre",
+        "title":"Boba Fett",
+        "infos":"Bas-relief.",
+        "dimensions":"Width: 40cm, Height: 40cm ",
+        "thumbs":{
+          "160":"/assets/img/cucus/boba-fett-2015_160.jpg",
+          "320":"/assets/img/cucus/boba-fett-2015_320.jpg",
+          "640":"/assets/img/cucus/boba-fett-2015_640.jpg",
+          "960":"/assets/img/cucus/boba-fett-2015_960.jpg",
+          "1280":"/assets/img/cucus/boba-fett-2015_1280.jpg",
+          "1600":"/assets/img/cucus/boba-fett-2015_1600.jpg",
+          "1920":"/assets/img/cucus/boba-fett-2015_1920.jpg"
+        },
+        "imgs":{
+          "160":"/assets/img/cucus/boba-fett-2015_160.jpg",
+          "320":"/assets/img/cucus/boba-fett-2015_320.jpg",
+          "640":"/assets/img/cucus/boba-fett-2015_640.jpg",
+          "960":"/assets/img/cucus/boba-fett-2015_960.jpg",
+          "1280":"/assets/img/cucus/boba-fett-2015_1280.jpg",
+          "1600":"/assets/img/cucus/boba-fett-2015_1600.jpg",
+          "1920":"/assets/img/cucus/boba-fett-2015_1920.jpg"
+        },
+        "alt":"Boba Fett."
       },
       {
         "id":22,

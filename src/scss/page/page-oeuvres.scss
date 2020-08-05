@@ -12,6 +12,9 @@
     &:hover {
         background-color: $main;
         color: $clear;
+        .btn--img {
+            transform: scale(1.2);
+        }
     }
     &-description {
         padding: .5em;

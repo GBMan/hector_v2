@@ -27,17 +27,15 @@ export default function BtnOeuvreMini(props) {
     }
 
     return (
-        <div className={"btn App-galerie--thumbs "+cssClass}>
-            <div className="btn--img-container">
-                <img 
-                className="btn--img" 
-                src={thumbs[0]} 
-                srcSet={srcSet}
-                sizes={sizes} 
-                alt={alt} 
-                onClick={(event) => {return onClickImg(position, event);}} 
-                />
-            </div>
+        <div className={"btn btn--img-container App-galerie--thumbs "+cssClass}>
+            <img 
+            className="btn--img" 
+            src={thumbs[0]} 
+            srcSet={srcSet}
+            sizes={sizes} 
+            alt={alt} 
+            onClick={(event) => {return onClickImg(position, event);}} 
+            />
         </div>
     )
 }
