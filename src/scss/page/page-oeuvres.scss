@@ -1,0 +1,22 @@
+.btn--oeuvre-container {
+    --btn-width: 100%;
+    background-color: $clear;
+    color: $main;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: var(--gap);
+    // height: var(--btn-height);
+    transition-duration: .3s;
+    transition-property: background-color, color;
+    width: var(--btn-width);
+    &:hover {
+        background-color: $main;
+        color: $clear;
+    }
+    &-description {
+        padding: .5em;
+        &-title {
+            font-weight: bold;
+        }
+    }
+}

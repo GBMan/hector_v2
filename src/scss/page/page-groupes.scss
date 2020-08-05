@@ -1,22 +1,36 @@
 .page-groupes {
 }
 .page-groupes--title {
+    background-color: $clear;
     color: $main;
     padding: 5px;
 }
-.page-groupes--container {
-    align-content: flex-start;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+:root {
+    --gap: .5rem;
 }
-
-$nb: 2;
-$btn-height: 100vw / $nb;
-$btn-width: 100% / $nb;
+.page-groupes--container {
+    --nb: 2;
+    // align-content: flex-start;
+    // display:flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
+    // background-color: #555;
+    // display: grid;
+    // gap: var(--gap);
+    // grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    // grid-template-columns: 1fr 1fr;
+    column-count: var(--nb);
+    column-gap: var(--gap);
+    padding: var(--gap);
+}
 .btn--groupe-img-container {
-    height: $btn-height;
-    width: $btn-width;
+    // --btn-height: calc((100vw - (var(--nb) - 1) * var(--gap)) / var(--nb));
+    // --btn-width: calc((100% - (var(--nb) - 1) * var(--gap)) / var(--nb));
+    --btn-width: 100%;
+    margin-bottom: var(--gap);
+    // height: var(--btn-height);
+    width: var(--btn-width);
     &:hover {
         .btn--groupe-title {
             padding:20px 0;
@@ -54,31 +68,34 @@ $btn-width: 100% / $nb;
 }
 
 @media screen and (min-width:640px) {
-    $nb: 3;
-    $btn-height: 100vw / $nb;
-    $btn-width: 100% / $nb;
+    .page-groupes--container {
+        --nb: 3;
+        // grid-template-columns: 1fr 1fr 1fr;
+    }
     .btn--groupe-img-container {
-        height: $btn-height;
-        width: $btn-width;
+        // height: $btn-height;
+        // width: $btn-width;
     }
 }
 
 @media screen and (min-width:960px) {
-    $nb: 4;
-    $btn-height: 100vw / $nb;
-    $btn-width: 100% / $nb;
+    .page-groupes--container {
+        --nb: 4;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .btn--groupe-img-container {
-        height: $btn-height;
-        width: $btn-width;
+        // height: $btn-height;
+        // width: $btn-width;
     }
 }
 
 @media screen and (min-width:1280px) {
-    $nb: 5;
-    $btn-height: 100vw / $nb;
-    $btn-width: 100% / $nb;
+    .page-groupes--container {
+        --nb: 5;
+        // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
     .btn--groupe-img-container {
-        height: $btn-height;
-        width: $btn-width;
+        // height: $btn-height;
+        // width: $btn-width;
     }
 }

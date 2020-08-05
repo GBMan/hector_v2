@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import {CatalogueContext} from './App';
-import BtnOeuvre from './BtnOeuvre';
+import BtnOeuvreMini from './BtnOeuvreMini';
 import ReactTouchEvents from 'react-touch-events'
 
 
@@ -17,7 +17,7 @@ export default function Galerie(props={}) {
     const imgsLength = images.length;
     const positionPrevious = (positionImg-1+imgsLength) % imgsLength;
     const positionNext = (positionImg+1) % imgsLength;
-    const { infos, dimensions, alt } = {...images[positionImg]};
+    const { title, infos, dimensions, alt } = {...images[positionImg]};
 
     let a = []
     for (let path in images[positionImg].imgs) {
@@ -65,7 +65,7 @@ export default function Galerie(props={}) {
             <div className="App-galerie--container" onClick={(event) => {return onClickClose(event);}}>
                 <div className="btn App-galerie--arrow App-galerie--arrow-left icon-left" onClick={(event) => {return onClickImg(positionPrevious, event);}}></div>
                 <div className="btn App-galerie--arrow App-galerie--arrow-right icon-right" onClick={(event) => {return onClickImg(positionNext, event);}}></div>
-                <div className={ (showInfo) ? "App-galerie--description show" : "App-galerie--description"}>{ infos }<br/>{ dimensions }</div> }
+                <div className={ (showInfo) ? "App-galerie--description show" : "App-galerie--description"}><span className="App-galerie--description-title">{title}</span><br />{ infos }<br/>{ dimensions }</div>
                 <ReactTouchEvents onSwipe={ handleSwipe }>
                     <div className="App-galerie--img-container">
                         <img 
@@ -81,12 +81,12 @@ export default function Galerie(props={}) {
                     {images.map((oeuvre, i) => {
                         const selectedClass = (positionImg === i) ? "App-galerie--thumb-selected" : "";
                         return (
-                            <BtnOeuvre 
+                            <BtnOeuvreMini 
                                 key={i} 
                                 position={i} 
                                 {...oeuvre} 
                                 handleClickImg={handleClickImg}
-                                cssClass={`App-galerie--thumbs ${selectedClass}`}
+                                cssClass={`${selectedClass}`}
                                 sizes="80px"
                             />
                         )

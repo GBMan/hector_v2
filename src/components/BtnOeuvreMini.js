@@ -1,15 +1,12 @@
 import React from 'react';
 
-export default function BtnOeuvre(props) {
+export default function BtnOeuvreMini(props) {
     const { 
-        title,
-        infos,
-        dimensions,
         position, 
         thumbs,
         alt, 
-        cssClass = "",
         handleClickImg,
+        cssClass = "",
         sizes = `
             (min-width:0px) and (max-width:639px) 50vw, 
             (min-width:640px) and (max-width:959px) 33.3vw, 
@@ -30,7 +27,7 @@ export default function BtnOeuvre(props) {
     }
 
     return (
-        <div className={"btn "+cssClass}>
+        <div className={"btn App-galerie--thumbs "+cssClass}>
             <div className="btn--img-container">
                 <img 
                 className="btn--img" 
@@ -40,11 +37,6 @@ export default function BtnOeuvre(props) {
                 alt={alt} 
                 onClick={(event) => {return onClickImg(position, event);}} 
                 />
-            </div>
-            <div className="btn--oeuvre-container-description">
-                <span className="btn--oeuvre-container-description-title">{title}</span><br />
-                {infos}<br />
-                {dimensions}
             </div>
         </div>
     )

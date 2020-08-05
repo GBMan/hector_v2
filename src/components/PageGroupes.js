@@ -59,7 +59,7 @@ export default function PageGroupes() {
                       position={i}
                       {...oeuvre}
                       handleClickImg={handleClickImg}
-                      cssClass="btn--groupe-img-container"
+                      cssClass="btn--oeuvre-img-container"
                     />
                   )
                 })
