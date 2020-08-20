@@ -1282,6 +1282,32 @@
           "1920":"/assets/img/bas-reliefs/the-little-red-riding-hood-the-wolf-0_1920.jpg"
         },
         "alt":"The little red riding hood the wolf."
+      },
+      {
+        "id":31,
+        "type":"oeuvre",
+        "title":"Lion",
+        "infos":"Bas-relief.",
+        "dimensions":"Width: 130cm, Height: 80cm ",
+        "thumbs":{
+          "160":"/assets/img/bas-reliefs/lion-0_160.jpg",
+          "320":"/assets/img/bas-reliefs/lion-0_320.jpg",
+          "640":"/assets/img/bas-reliefs/lion-0_640.jpg",
+          "960":"/assets/img/bas-reliefs/lion-0_960.jpg",
+          "1280":"/assets/img/bas-reliefs/lion-0_1280.jpg",
+          "1600":"/assets/img/bas-reliefs/lion-0_1600.jpg",
+          "1920":"/assets/img/bas-reliefs/lion-0_1920.jpg"
+        },
+        "imgs":{
+          "160":"/assets/img/bas-reliefs/lion-0_160.jpg",
+          "320":"/assets/img/bas-reliefs/lion-0_320.jpg",
+          "640":"/assets/img/bas-reliefs/lion-0_640.jpg",
+          "960":"/assets/img/bas-reliefs/lion-0_960.jpg",
+          "1280":"/assets/img/bas-reliefs/lion-0_1280.jpg",
+          "1600":"/assets/img/bas-reliefs/lion-0_1600.jpg",
+          "1920":"/assets/img/bas-reliefs/lion-0_1920.jpg"
+        },
+        "alt":"Lion."
       }
     ]
   },
